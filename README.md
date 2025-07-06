@@ -15,8 +15,8 @@
 
 Uygulama Açıklaması: Bilgi Kapsülü, kullanıcıların karmaşık akademik konuları yapay zeka desteğiyle özetleyip basit bir dilde açıklayan bir uygulamadır. 
 
-
 Özellikler: Öğretici, Kullanıcı dostu olması , eğitim odaklı olması
+
 ---
 
 ## Sprint 1: Hedefler
