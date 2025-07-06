@@ -3,6 +3,8 @@
  # Bilgi Kapsülü
 
   Takım İsmi: AI Grup 181
+  
+  
   Takım Üyeleri : Fatih Niyazi Sivaslıoğlu Product Owner
                   Yağmur Küçükarslan ScrumMaster
                   Mustafa Soylu Developer
@@ -10,7 +12,10 @@
                   
                   
   
+
 Uygulama Açıklaması: Bilgi Kapsülü, kullanıcıların karmaşık akademik konuları yapay zeka desteğiyle özetleyip basit bir dilde açıklayan bir uygulamadır. 
+
+
 Özellikler: Öğretici, Kullanıcı dostu olması , eğitim odaklı olması
 ---
 
