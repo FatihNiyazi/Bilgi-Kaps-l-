@@ -9,10 +9,17 @@
                   Yağmur Küçükarslan ScrumMaster
                   Mustafa Soylu Developer
                   Zeynep Ceren Kocaoğlu Developer
-                  
-                  
-  
 
+
+   ## Product Backlog
+
+- [Product Backlog (Miro]((https://miro.com/app/board/uXjVIgi5jc4=/))
+
+                  
+                  
+ Hedef Kitle: Öğrenciler, Bir konu hakkında fikir sahibi olmak isteyen her birey
+
+ 
 Uygulama Açıklaması: Bilgi Kapsülü, kullanıcıların karmaşık akademik konuları yapay zeka desteğiyle özetleyip basit bir dilde açıklayan bir uygulamadır. 
 
 Özellikler: Öğretici, Kullanıcı dostu olması , eğitim odaklı olması
