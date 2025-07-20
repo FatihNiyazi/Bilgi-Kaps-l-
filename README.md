@@ -62,6 +62,8 @@ Hedef Kitle: Öğrenciler, Bir konu hakkında fikir sahibi olmak isteyen herhang
 - Ürün görselleri şu şekildedir
 -<img width="2559" height="1186" alt="image" src="https://github.com/user-attachments/assets/49bcf930-051f-41c9-8152-92f362414dce" />
 -<img width="2559" height="1179" alt="image" src="https://github.com/user-attachments/assets/6f48e722-4125-4767-9e73-607b61356b89" />
+-<img width="2559" height="1168" alt="image" src="https://github.com/user-attachments/assets/82f692cc-a04c-4413-9819-d2ffe142f8b9" />
+
 -<img width="718" height="1012" alt="image" src="https://github.com/user-attachments/assets/645a156b-c75f-4def-9f5a-eb8b584c2e56" />
 -<img width="720" height="818" alt="image" src="https://github.com/user-attachments/assets/8e3da4d5-d4bc-413b-aec8-f033833ec8f7" />
 
