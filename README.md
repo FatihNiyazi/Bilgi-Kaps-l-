@@ -74,6 +74,15 @@ Hedef Kitle: Öğrenciler, Bir konu hakkında fikir sahibi olmak isteyen herhang
 - Takım Üyelerinin gelecek sprintte daha aktif olması gerektiğine vurgu yapılmıştır.
 
 
+## Sprint 3 
+  Daily Scrum : Oluşturulan bir görev dağılımı olmamıştır
+  - Proje burada noktalandı
+  - Daily scrumdan iletişime geçilemedi
+  - 2. sprintte ek bir şey eklenmedi hatalar düzeltildi sadece
+  # Sprint Review 
+  - Sprint başarılı geçti olan hatalar düzeltildi
+  # Sprint Retroperspective
+  - Takım üyelerinin daha aktif olması gerektiğine vurgu yapılmıştır.
 
 1. Depoyu klonlayın(Daha hazır değil)  
    ```bash
