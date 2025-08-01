@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kay�t Ol</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Kay�t Ol</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">{{ message }}</div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+        <form method="POST" action="/register">
+            <input type="text" name="username" placeholder="Kullan�c� Ad�" required>
+            <input type="password" name="password" placeholder="�ifre" required>
+            <button type="submit">Kay�t Ol</button>
+        </form>
+        <p>Zaten bir hesab�n var m�? <a href="{{ url_for('login') }}">Giri� Yap</a></p>
+    </div>
+</body>
+</html>

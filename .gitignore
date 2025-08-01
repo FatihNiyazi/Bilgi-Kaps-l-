@@ -1,0 +1,10 @@
+.env
+
+instance/
+__pycache__/
+*.sqlite3
+
+user_pdfs/
+
+.vscode/
+.idea/

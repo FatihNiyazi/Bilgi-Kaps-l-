@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapsüllerim - Bilgi Kapsülü</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="{{ url_for('index') }}">Bilgi Kapsülü</a>
+        </div>
+        <nav class="main-nav">
+            <span class="welcome-user">Hoş geldin, {{ current_user.username }}!</span>
+            <a href="{{ url_for('kapsullerim') }}" class="active">Kapsüllerim</a> 
+            <a href="{{ url_for('logout') }}" class="button-logout">Çıkış Yap</a>
+        </nav>
+    </header>
+
+   <div class="container">
+    <h1>Oluşturduğun Kapsüller</h1>
+    
+    {% if kapsuller %}
+        <ul class="kapsul-list">
+        {% for kapsul in kapsuller %}
+            <li class="kapsul-item">
+                <div class="kapsul-info">
+                    <span class="kapsul-topic">{{ kapsul.topic }}</span>
+                    <span class="kapsul-date">{{ kapsul.created_at.strftime('%d-%m-%Y %H:%M') }}</span>
+                </div>
+                <div class="kapsul-actions">
+                    <a href="{{ url_for('download_pdf', filename=kapsul.filename) }}" class="button-download">İndir</a>
+                </div>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Henüz hiç bilgi kapsülü oluşturmamışsın.</p>
+        <a href="{{ url_for('index') }}" class="button-primary">İlk Kapsülünü Oluştur!</a>
+    {% endif %}
+</div>
+
+</body>
+</html>

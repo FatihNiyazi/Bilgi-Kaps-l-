@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgi Kapsülü</title>
+ 
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="{{ url_for('index') }}">Bilgi Kapsülü</a>
+        </div>
+        <nav class="main-nav">
+            {% if current_user.is_authenticated %}
+                <span class="welcome-user">Hoş geldin, {{ current_user.username }}!</span>
+                <a href="{{ url_for('kapsullerim') }}">Kapsüllerim</a>
+                <a href="{{ url_for('logout') }}" class="button-logout">Çıkış Yap</a>
+            {% else %}
+                <a href="{{ url_for('login') }}">Giriş Yap</a>
+                <a href="{{ url_for('register') }}" class="button-primary">Kayıt Ol</a>
+            {% endif %}
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Anında Anlaşılır Bilgiler</h1>
+        <p class="subtitle">Anlaşılması zor konuları saniyeler içinde basit bir PDF'e dönüştürün.</p>
+
+        
+        <form action="{{ url_for('create_pdf') }}" method="POST" class="pdf-form" id="pdfForm">
+            <textarea name="topic" id="topicInput" placeholder="Örneğin: Yapay zeka etiği, Karadelikler..."></textarea>
+
+            <button type="submit" id="submitButton">
+                <span class="button-text">Kapsülü Oluştur</span>
+                <div class="spinner hidden"></div>
+            </button>
+        </form>
+        <div class="sample-topics">
+            <span>İlham mı arıyorsun? Şunları dene:</span>
+            <button class="topic-btn">Kuantum Fiziği</button>
+            <button class="topic-btn">Rönesans Sanatı</button>
+            <button class="topic-btn">Blockchain Teknolojisi</button>
+        </div>
+</body>
+</html>
